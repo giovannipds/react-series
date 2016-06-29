@@ -9,14 +9,14 @@ export default class PlacarContainer extends React.Component {
 			<div>
 				<div style={{float: "left", "marginRight": "20px"}}>
 					<h3>Casa</h3>
-					<Time />
+					<Time nome={this.props.casa.nome} gols={0} />
 				</div>
 				<div style={{float: "left", "marginRight": "20px"}}>
 					<Partida />
 				</div>
 				<div style={{float: "left", "marginRight": "20px"}}>
 					<h3>Visitante</h3>
-					<Time />
+					<Time nome={this.props.visitante.nome} gols={0} />
 				</div>
 				<div style={{clear: "both"}}></div>
 			</div>
