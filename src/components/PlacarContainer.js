@@ -42,8 +42,33 @@ export default class PlacarContainer extends React.Component {
 						  gols={this.state.gols_visitante}
 						  marcarGol={this.marcarGolVisitante.bind(this)} />
 				</div>
+				<div>{this.props.clima}</div>
 				<div style={{clear: "both"}}></div>
 			</div>
 		);
 	}
 }
+
+PlacarContainer.propTypes = {
+	clima: React.PropTypes.string,
+	tempo: React.PropTypes.number.isRequired
+};
+
+PlacarContainer.defaultProps = {
+	clima: 'Ensolarado'
+}
+
+// React.PropTypes.any
+// React.PropTypes.array
+// React.PropTypes.bool
+// React.PropTypes.func
+// React.PropTypes.number
+// React.PropTypes.object
+// React.PropTypes.string
+// React.PropTypes.instanceOf(Partida)
+// React.PropTypes.oneOf(['Vasco', 'Flamengo'])
+// React.PropTypes.oneOfType([Time, Partida])
+// React.PropTypes.arrayOf(React.PropTypes.string)
+// React.PropTypes.share({
+//     nome: React.PropTypes.string
+// })
