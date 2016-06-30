@@ -21,9 +21,7 @@ export default class App extends React.Component {
 	render() {
 		return (
 			<div>
-				<PlacarContainer partida={dados.partida}
-								 casa={dados.casa}
-								 visitante={dados.visitante} />
+				<PlacarContainer {...dados} />
 				<Contador />
 			</div>
 		);
